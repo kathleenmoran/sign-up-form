@@ -27,6 +27,30 @@
       <p>
         You <em>know</em> you want to.
       </p>
+      <form>
+        <div>
+          <p>Let's do this!</p>
+          <div>
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" name="first_name" required>
+            <label for="last_name">LAST NAME</label>
+            <input type="text" name="last_name" required>
+          </div>
+          <div>
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" required>
+            <label for="phone_number">PHONE NUMBER</label>
+            <input type="tel" name="phone_number">
+          </div>
+          <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" class="error" required>
+            <label for="confirmed_password">CONFIRMED PASSWORD</label>
+            <input type="password" name="confirmed_password" class="error" required>
+          </div>
+        </div>
+        <input type="submit" value="Create Account">
+      </form>
     </div>
   </body>
 </html>
