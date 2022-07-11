@@ -21,39 +21,57 @@
         <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
       </div>
     </div>
-    <div>
-      <p>
-        This is not a real online service! You know you need something like this
-        in your life to help realize your deepest dreams. Sign up <em>now</em> to
-        get started.
-      </p>
-      <p>
-        You <em>know</em> you want to.
-      </p>
-      <form>
-        <div>
+    <div class="main-content">
+      <div class="empty-space"></div>
+      <div class="description">
+        <p>
+          This is not a real online service! You know you need something like this
+          in your life to help realize your deepest dreams. Sign up <em>now</em> to
+          get started.
+        </p>
+        <br/>
+        <p>
+          You <em>know</em> you want to.
+        </p>
+        <div class="empty-space"></div>
+      </div>
+      <form id="sign-up-form">
+        <div class="form-content">
           <p>Let's do this!</p>
           <div>
-            <label for="first_name">FIRST NAME</label>
-            <input type="text" name="first_name" required>
-            <label for="last_name">LAST NAME</label>
-            <input type="text" name="last_name" required>
+            <div>
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" name="first_name" placeholder=" " pattern="(.|\s)*\S(.|\s)*" required>
+            </div>
+            <div>
+              <label for="last_name">LAST NAME</label>
+              <input type="text" name="last_name" placeholder=" " pattern="(.|\s)*\S(.|\s)*" required>
+            </div>
           </div>
           <div>
-            <label for="email">EMAIL</label>
-            <input type="email" name="email" required>
-            <label for="phone_number">PHONE NUMBER</label>
-            <input type="tel" name="phone_number">
+            <div>
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" placeholder=" " required>
+            </div>
+            <div>
+              <label for="phone_number">PHONE NUMBER</label>
+              <input type="tel" name="phone_number">
+            </div>
           </div>
           <div>
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" class="error" required>
-            <label for="confirmed_password">CONFIRMED PASSWORD</label>
-            <input type="password" name="confirmed_password" class="error" required>
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" class="error" required>
+              <p>* Passwords do not match</p>
+            </div>
+            <div>
+              <label for="confirmed_password">CONFIRMED PASSWORD</label>
+              <input type="password" name="confirmed_password" class="error" required>
+            </div>
           </div>
         </div>
-        <input type="submit" value="Create Account">
       </form>
+      <input type="submit" value="Create Account" form="sign-up-form">
       <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </body>
